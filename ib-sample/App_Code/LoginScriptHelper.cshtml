@@ -1,0 +1,22 @@
+﻿@helper LoginHeader() {
+    if (Page.email != null && Page.email != "") {
+    <ul>
+      <li><a class='sign-out block' href = '#'>@Page.email</a></li>
+      <li><a class='sign-out block' href='javascript://' onclick='bikeStore.Sso.logout();'> Logout </a></li>
+    </ul>
+    }
+    else 
+    {
+    <a class='sign-out hide' href = '#'></a>
+    <div style='margin-top:10%'>
+      <div class='g-signin' 
+        data-callback='render'
+        data-clientid='@Page.clientId'
+        data-scope='@Page.scopes'
+        data-height='standard'
+        data-width='standard'
+        data-cookiepolicy='none'>
+      </div>
+    </div>
+    }
+}
