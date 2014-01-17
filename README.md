@@ -33,7 +33,7 @@ Step 2: Add the Merchant credentials in the app.
 ---------------------------------------------------
 If you do not already have a merchant_id and secret, fill the [Google Wallet Instant Buy interest form](http://getinstantbuy.withgoogle.com/). 
 Once you are granted access, you should have an a merchant_id and a secret/auth_key. 
-Edit Web.config and replace the SANDBOX_MERCHANT_ID and SANDBOX_AUTH_KEY with the values.
+Edit __Web.config__ and replace the SANDBOX_MERCHANT_ID and SANDBOX_AUTH_KEY with the values.
 
     <add key="sandbox_merchant_id" value="SANDBOX_MERCHANT_ID"/>
     <add key="sandbox_merchant_auth_key" value="SANDBOX_AUTH_KEY"/>
