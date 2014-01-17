@@ -25,6 +25,7 @@ Step 1: Create an OAuth2 Client ID
 You need to create an oauth2 client Id for your app. You can do this by creating a project for your app in Google APIs console.
 
 1. In the [Google APIs Console](http://cloud.google.com/console), select __Create Project__ button and enter a project name.
+2. In the API access pane, enable the Google+ API. This is used by the sample app for demonstrating G+ Sign In.
 2. Under __APIs & Auth__ click on __Credentials__ and __Create new Client Id__.
 3. Select Web Application for the Application type.
 4. Add "http://localhost:8080/" to the __Authorized JavaScript Origins__ field.
