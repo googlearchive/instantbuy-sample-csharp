@@ -1,8 +1,7 @@
 instantbuy-sample-csharp
 ========================
 
-A CSharp Web Application that implements the Instant Buy Web API
-
+A C# Web Application that implements the Instant Buy Web API. 
 
 Requirements
 =============
@@ -25,15 +24,15 @@ Step 1: Create an OAuth2 Client ID
 
 You need to create an oauth2 client Id for your app. You can do this by creating a project for your app in Google APIs console.
 
-1. In the [Google APIs Console](http://cloud.google.com), select Create from the pull-down and enter a project name.
-2. Under APIs&Auth click on "Credentials" and "Create new OAuth ClientId".
+1. In the [Google APIs Console](http://cloud.google.com/console), select __Create Project__ button and enter a project name.
+2. Under __APIs & Auth__ click on __Credentials__ and __Create new Client Id__.
 3. Select Web Application for the Application type.
-4. Add "http://localhost:8080/" to the Authorized JavaScript Origins field.
+4. Add "http://localhost:8080/" to the __Authorized JavaScript Origins__ field.
 
 Step 2: Add the Merchant credentials in the app.
 ---------------------------------------------------
-If you do not already have a merchant_id and secret, fill the [interest form](http://getinstantbuy.withgoogle.com/). 
-Once you are granted access, you should have an id and a secret. 
+If you do not already have a merchant_id and secret, fill the [Google Wallet Instant Buy interest form](http://getinstantbuy.withgoogle.com/). 
+Once you are granted access, you should have an a merchant_id and a secret/auth_key. 
 Edit Web.config and replace the SANDBOX_MERCHANT_ID and SANDBOX_AUTH_KEY with the values.
 
     <add key="sandbox_merchant_id" value="SANDBOX_MERCHANT_ID"/>
@@ -46,9 +45,9 @@ Also replace the OAUTH_CLIENT_ID with the value created in Step 1 above.
 Step 3: Set up & run the project in Visual Studio
 --------------------------------------------
  1. Open the Solution file instantbuy-sample-csharp.sln, and the project will open in Visual Studio.
- 2. Click Project &gt; Enable NuGet Package Restore &gt; answer Yes in the dialog.
- 3. Right-click on the instantbuy-sample-csharp project and selct Manage NuGet Packages.
- 4. Click __Restore__ on the Manage NuGet Packages window. This will install the necessary packages.
+ 2. Click __Project &gt; Enable NuGet Package Restore &gt;__ answer Yes in the dialog.
+ 3. Right-click on the instantbuy-sample-csharp project and select Manage NuGet Packages.
+ 4. Click __Restore__ on the __Manage NuGet Packages__ window. This will install the necessary packages.
  5. Close and try to build the project. The project should build successfully.
  6. Run the project by pressing the F5 key. This should bring up the Default.cshtml in a browser.
 
